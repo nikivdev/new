@@ -1,8 +1,12 @@
 # New
 
-> New snippets, files, projects
+> New projects, files, everything
 
-All starter repos have `new-` prefix and can be seen [here](https://github.com/nikitavoloboev?tab=repositories&q=new-&type=source).
+Currently setting up infra to generate everything I need through [gen.new](https://gen.new) but not yet there.
+
+For now can see [website starter](https://github.com/gendotnew/web) that I use to start all website projects.
+
+<!-- All starter repos have `new-` prefix and can be seen [here](https://github.com/nikitavoloboev?tab=repositories&q=new-&type=source).
 
 Currently everything below needs to be updated as my stack changed a lot. A lot of these things will be generated with [gen](https://github.com/1focus-ai/gen).
 
@@ -16,7 +20,7 @@ Currently everything below needs to be updated as my stack changed a lot. A lot 
 - [web-auth](https://github.com/nikitavoloboev/new-web-auth) - New website with auth (TanStack Start, Jazz)
 - [next](https://github.com/nikitavoloboev/new-next) - New website (Next.js)
 - [telegram-mini-app](https://github.com/nikitavoloboev/new-telegram-mini-app) - New Telegram mini app (TanStack Start, Jazz)
-- [next-postgres-auth](https://github.com/nikitavoloboev/new-next-postgres-auth) - New website (Next.js, Postgres, Better Auth)
+- [next-postgres-auth](https://github.com/nikitavoloboev/new-next-postgres-auth) - New website (Next.js, Postgres, Better Auth) -->
 
 ### 🖤
 
