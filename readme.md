@@ -4,7 +4,7 @@
 
 Currently setting up infra to generate everything I need through [gen.new](https://gen.new) but not yet there.
 
-For now can see [website starter](https://github.com/gendotnew/web) that I use to start all website projects.
+For now can see [website](https://github.com/gendotnew/web) or [AI chat](https://github.com/gendotnew/web-ai-chat) or [other repos in gen.new org](https://github.com/gendotnew) that are used for generating new things.
 
 <!-- All starter repos have `new-` prefix and can be seen [here](https://github.com/nikitavoloboev?tab=repositories&q=new-&type=source).
 
