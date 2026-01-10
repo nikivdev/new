@@ -1,0 +1,18 @@
+version = 1
+
+[[tasks]]
+name = "setup"
+command = "bun install"
+description = "Install tools and dependencies"
+shortcuts = ["s"]
+dependencies = ["bun"]
+
+[[tasks]]
+name = "dev"
+command = "bun run dev"
+description = "Run development server"
+dependencies = ["setup"]
+shortcuts = ["d"]
+
+[deps]
+bun = ["bun"]
