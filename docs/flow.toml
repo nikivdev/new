@@ -16,3 +16,8 @@ shortcuts = ["d"]
 
 [deps]
 bun = ["bun"]
+
+[cloudflare]
+deploy = "bun run build && bunx wrangler pages deploy out --project-name ${FLOW_DOCS_PROJECT:-myflow}"
+env_apply = "never"
+url = "https://myflow.sh"

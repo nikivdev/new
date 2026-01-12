@@ -1,0 +1,16 @@
+node_modules
+dist
+.wrangler
+.env
+.env.local
+*.log
+.DS_Store
+.tanstack
+routeTree.gen.ts
+
+# flow
+.ai/internal/
+.ai/web/
+.claude/
+.codex/
+.flox/

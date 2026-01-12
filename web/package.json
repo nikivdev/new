@@ -1,0 +1,24 @@
+{
+  "name": "web",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "packageManager": "pnpm@10.11.1",
+  "scripts": {
+    "dev": "pnpm dev:web",
+    "dev:web": "pnpm --filter @app/web run dev",
+    "dev:worker": "pnpm --filter @app/worker run dev",
+    "deploy": "pnpm deploy:web && pnpm deploy:worker",
+    "deploy:web": "pnpm --filter @app/web run deploy",
+    "deploy:worker": "pnpm --filter @app/worker run deploy",
+    "test": "pnpm -r test",
+    "lint": "pnpm -r lint",
+    "lint:fix": "pnpm -r lint:fix"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.3"
+  },
+  "prettier": {
+    "semi": false
+  }
+}

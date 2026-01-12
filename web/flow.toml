@@ -1,0 +1,42 @@
+[options]
+name = "web"
+
+[[tasks]]
+name = "dev"
+command = "pnpm dev:web"
+description = "Start web dev server"
+
+[[tasks]]
+name = "dev-worker"
+command = "pnpm dev:worker"
+description = "Start worker dev server"
+
+[[tasks]]
+name = "deploy"
+command = "pnpm deploy"
+description = "Deploy web and worker to Cloudflare"
+
+[[tasks]]
+name = "deploy-web"
+command = "pnpm deploy:web"
+description = "Deploy web to Cloudflare Pages"
+
+[[tasks]]
+name = "deploy-worker"
+command = "pnpm deploy:worker"
+description = "Deploy worker to Cloudflare Workers"
+
+[[tasks]]
+name = "test"
+command = "pnpm test"
+description = "Run tests"
+
+[[tasks]]
+name = "lint"
+command = "pnpm lint"
+description = "Run linter"
+
+[[tasks]]
+name = "setup"
+command = "pnpm install"
+description = "Install dependencies"
