@@ -1,0 +1,14 @@
+version = 1
+
+[[tasks]]
+name = "setup"
+command = ""
+description = ""
+shortcuts = ["s"]
+
+[[tasks]]
+name = "dev"
+command = ""
+description = ""
+dependencies = ["setup"]
+shortcuts = ["d"]
