@@ -1,0 +1,34 @@
+version = 1
+
+[[tasks]]
+name = "setup"
+command = "npm install"
+description = "Install dependencies"
+shortcuts = ["s"]
+
+[[tasks]]
+name = "dev"
+command = "encore run"
+description = "Run development server"
+shortcuts = ["d"]
+
+[[tasks]]
+name = "test"
+command = "encore test"
+description = "Run tests"
+shortcuts = ["t"]
+
+[[tasks]]
+name = "db:shell"
+command = "encore db shell"
+description = "Connect to database via psql"
+
+[[tasks]]
+name = "db:reset"
+command = "encore db reset --all"
+description = "Reset all databases"
+
+[[tasks]]
+name = "db:proxy"
+command = "encore db proxy"
+description = "Start local database proxy"
