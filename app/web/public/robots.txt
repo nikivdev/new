@@ -1,0 +1,6 @@
+# robots.txt for Starter App
+User-agent: *
+Allow: /
+Disallow: /api/
+
+Sitemap: https://starter.app/sitemap.xml

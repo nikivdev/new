@@ -1,0 +1,16 @@
+{
+  "name": "@app/domain",
+  "version": "0.0.1",
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts",
+    "./http": "./src/http/index.ts"
+  },
+  "dependencies": {
+    "@effect/platform": "^0.94.0",
+    "effect": "^3.19.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.0"
+  }
+}

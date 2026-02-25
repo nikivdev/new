@@ -1,0 +1,30 @@
+{
+  "name": "@starter/api",
+  "version": "0.0.1",
+  "type": "module",
+  "scripts": {
+    "dev": "tsx --watch src/server.ts",
+    "build": "tsup src/server.ts --format esm --dts",
+    "start": "node dist/server.mjs",
+    "lint": "oxlint src",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@effect/platform": "^0.94.0",
+    "@effect/platform-node": "^0.104.0",
+    "@effect/sql": "^0.49.0",
+    "@effect/sql-drizzle": "^0.48.0",
+    "@effect/sql-libsql": "^0.39.0",
+    "@libsql/client": "^0.17.0",
+    "@app/db": "workspace:*",
+    "@app/domain": "workspace:*",
+    "drizzle-orm": "^0.45.0",
+    "effect": "^3.19.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "tsup": "^8.0.0",
+    "tsx": "^4.0.0",
+    "typescript": "^5.7.0"
+  }
+}

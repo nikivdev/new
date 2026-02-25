@@ -1,0 +1,23 @@
+{
+  "name": "@app/db",
+  "version": "0.0.1",
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts",
+    "./schema": "./src/schema/index.ts",
+    "./config": "./src/config.ts",
+    "./migrate": "./src/migrate.ts"
+  },
+  "dependencies": {
+    "@libsql/client": "^0.17.0",
+    "drizzle-orm": "^0.45.0"
+  },
+  "devDependencies": {
+    "drizzle-kit": "^0.31.0",
+    "typescript": "^5.7.0"
+  },
+  "scripts": {
+    "generate": "drizzle-kit generate",
+    "migrate": "drizzle-kit migrate"
+  }
+}

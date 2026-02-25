@@ -1,0 +1,37 @@
+{
+  "include": ["**/*.ts", "**/*.tsx"],
+  "compilerOptions": {
+    "target": "ES2022",
+    "jsx": "react-jsx",
+    "module": "ESNext",
+    "lib": ["ES2022", "DOM", "DOM.Iterable"],
+    "types": ["./worker-configuration.d.ts", "node", "vite/client"],
+
+    /* Bundler mode */
+    "moduleResolution": "bundler",
+    "allowImportingTsExtensions": true,
+    "verbatimModuleSyntax": false,
+    "noEmit": true,
+
+    /* Linting */
+    "skipLibCheck": true,
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
+    "noUncheckedSideEffectImports": true,
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"],
+      "@ui": ["../ui/components/index.ts"],
+      "@ui/*": ["../ui/components/*"],
+      "@lib": ["../lib/ts/index.ts"],
+      "@lib/*": ["../lib/ts/*"],
+      "@jazz/react": ["/Users/nikiv/code/org/1f/jazz/packages/jazz-react/src/index.ts"],
+      "@jazz/client": ["/Users/nikiv/code/org/1f/jazz/packages/jazz-client/src/index.ts"],
+      "@jazz/schema": ["/Users/nikiv/code/org/1f/jazz/packages/jazz-schema/src/index.ts"],
+      "@jazz/schema/*": ["/Users/nikiv/code/org/1f/jazz/packages/jazz-schema/src/*"],
+      "groove-wasm": ["/Users/nikiv/code/org/1f/jazz/crates/groove-wasm/pkg/groove_wasm.js"]
+    }
+  }
+}

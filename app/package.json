@@ -1,0 +1,22 @@
+{
+  "name": "effect4-web-starter",
+  "private": true,
+  "type": "module",
+  "workspaces": [
+    "api/effect4",
+    "api/ts",
+    "packages/*",
+    "web"
+  ],
+  "scripts": {
+    "install:all": "bun install",
+    "typecheck": "bun run --cwd api/ts typecheck && bun run --cwd api/effect4 typecheck",
+    "build:web": "bun run --cwd web build",
+    "lint": "bun run --cwd api/ts lint",
+    "dev:api": "bun run --cwd api/ts dev",
+    "dev:api-effect4": "bun run --cwd api/effect4 dev",
+    "dev:web": "bun run --cwd web dev",
+    "smoke:effect4": "bash ./scripts/smoke-effect4.sh",
+    "verify:starter": "bun run typecheck && bun run build:web && bun run smoke:effect4"
+  }
+}

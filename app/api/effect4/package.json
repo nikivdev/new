@@ -1,0 +1,19 @@
+{
+  "name": "@starter/api-effect4",
+  "version": "0.0.1",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "tsx --watch src/server.ts",
+    "start": "node --enable-source-maps src/server.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "effect": "4.0.0-beta.14"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "tsx": "^4.21.0",
+    "typescript": "^5.9.3"
+  }
+}

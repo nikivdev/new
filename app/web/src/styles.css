@@ -1,0 +1,242 @@
+@import "tailwindcss";
+
+:root {
+  --gen-bg-app: #07080f;
+  --gen-bg-panel: #0b0d16;
+  --gen-bg-card: #141723;
+  --gen-bg-soft: #181b28;
+  --gen-text-primary: #f4f7ff;
+  --gen-text-muted: #9aa4bb;
+  --gen-border-soft: rgba(255, 255, 255, 0.1);
+  --gen-shadow: 0 24px 70px rgba(0, 0, 0, 0.35);
+}
+
+:root[data-theme="light"] {
+  --gen-bg-app: #edf3fb;
+  --gen-bg-panel: #ffffff;
+  --gen-bg-card: #f8fbff;
+  --gen-bg-soft: #eef3fb;
+  --gen-text-primary: #0c213d;
+  --gen-text-muted: #415a78;
+  --gen-border-soft: rgba(15, 36, 63, 0.2);
+  --gen-shadow: 0 24px 70px rgba(53, 86, 124, 0.2);
+}
+
+body {
+  @apply m-0;
+  font-family:
+    -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu",
+    "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--gen-bg-app);
+  color: var(--gen-text-primary);
+}
+
+.safe-min-h-screen {
+  min-height: 100vh;
+}
+
+.safe-h-screen {
+  height: 100vh;
+}
+
+@supports (min-height: 100svh) {
+  .safe-min-h-screen {
+    min-height: 100svh;
+  }
+  .safe-h-screen {
+    height: 100svh;
+  }
+}
+
+@supports (min-height: 100dvh) {
+  .safe-min-h-screen {
+    min-height: 100dvh;
+  }
+  .safe-h-screen {
+    height: 100dvh;
+  }
+}
+
+@supports (-webkit-touch-callout: none) {
+  .safe-min-h-screen {
+    min-height: -webkit-fill-available;
+  }
+  .safe-h-screen {
+    height: -webkit-fill-available;
+  }
+}
+
+code {
+  font-family:
+    source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+.scrollbar-hide {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.env-table .env-value {
+  filter: none;
+  opacity: 1;
+}
+
+.env-table .env-actions {
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease;
+}
+
+.env-table-view,
+.env-table .react-spectrum-Table {
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.env-table .env-row[data-hovered] .env-actions,
+.env-table .env-row:hover .env-actions,
+.env-table [role="row"][data-hovered] .env-actions,
+.env-table [role="row"]:hover .env-actions {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.env-table-view .react-spectrum-Table-cell,
+.env-table-view .spectrum-Table-cell {
+  text-overflow: clip !important;
+  overflow: visible !important;
+  white-space: normal !important;
+}
+
+.env-table-view .react-spectrum-Table-cellContents,
+.env-table-view .spectrum-Table-cellContents {
+  text-overflow: clip !important;
+  overflow: visible !important;
+  white-space: normal !important;
+}
+
+.env-table .env-cell {
+  overflow: visible !important;
+  white-space: normal !important;
+  text-overflow: clip !important;
+}
+
+.env-table .env-cell .spectrum-Table-cellContents,
+.env-table .env-cell .react-spectrum-Table-cellContents {
+  overflow: visible !important;
+  white-space: normal !important;
+  text-overflow: clip !important;
+}
+
+.gen-theme-toggle {
+  backdrop-filter: blur(8px);
+}
+
+:root[data-theme="light"] .gen-chat-shell,
+:root[data-theme="light"] .gen-chat-main,
+:root[data-theme="light"] .gen-chat-sidebar,
+:root[data-theme="light"] .gen-mobile-header,
+:root[data-theme="light"] .gen-mobile-drawer,
+:root[data-theme="light"] .gen-chat-input-shell,
+:root[data-theme="light"] .gen-preview-panel {
+  background:
+    radial-gradient(circle at 0% 0%, rgba(102, 194, 255, 0.16), transparent 45%),
+    radial-gradient(circle at 100% 0%, rgba(87, 162, 255, 0.12), transparent 38%),
+    var(--gen-bg-app) !important;
+  color: var(--gen-text-primary);
+}
+
+:root[data-theme="light"] .gen-chat-sidebar,
+:root[data-theme="light"] .gen-mobile-header,
+:root[data-theme="light"] .gen-mobile-drawer,
+:root[data-theme="light"] .gen-chat-input-card,
+:root[data-theme="light"] .gen-capabilities-card,
+:root[data-theme="light"] .gen-overlay-card,
+:root[data-theme="light"] .gen-user-bubble,
+:root[data-theme="light"] .gen-auth-cta {
+  border-color: var(--gen-border-soft) !important;
+  box-shadow: var(--gen-shadow);
+}
+
+:root[data-theme="light"] .gen-chat-input-card,
+:root[data-theme="light"] .gen-capabilities-card,
+:root[data-theme="light"] .gen-user-bubble,
+:root[data-theme="light"] .gen-overlay-card {
+  background: color-mix(in srgb, var(--gen-bg-panel) 88%, #deebff) !important;
+}
+
+:root[data-theme="light"] .gen-auth-cta {
+  background:
+    linear-gradient(165deg, #f8fcff 0%, #e7f2ff 55%, #deecff 100%) !important;
+}
+
+:root[data-theme="light"] .gen-theme-toggle {
+  background: color-mix(in srgb, #f8fcff 86%, #d9e8ff) !important;
+  color: var(--gen-text-primary) !important;
+  border-color: var(--gen-border-soft) !important;
+}
+
+:root[data-theme="light"] .gen-chat-shell [class*="text-white"] {
+  color: var(--gen-text-primary) !important;
+}
+
+:root[data-theme="light"] .gen-chat-shell [class*="text-neutral-"] {
+  color: var(--gen-text-muted) !important;
+}
+
+:root[data-theme="light"] .gen-chat-shell [class*="border-white"] {
+  border-color: var(--gen-border-soft) !important;
+}
+
+:root[data-theme="light"] .gen-chat-shell [class*="bg-[#07080f]"],
+:root[data-theme="light"] .gen-chat-shell [class*="bg-[#0a0b10]"],
+:root[data-theme="light"] .gen-chat-shell [class*="bg-[#05060b]"],
+:root[data-theme="light"] .gen-chat-shell [class*="bg-[#0b0d16]"],
+:root[data-theme="light"] .gen-chat-shell [class*="bg-[#171821]"],
+:root[data-theme="light"] .gen-chat-shell [class*="bg-black"] {
+  background-color: color-mix(in srgb, var(--gen-bg-panel) 88%, #deebff) !important;
+}
+
+:root[data-theme="light"] .gen-chat-shell [class*="bg-white/5"],
+:root[data-theme="light"] .gen-chat-shell [class*="bg-white/10"] {
+  background-color: color-mix(in srgb, var(--gen-bg-soft) 82%, #d8e7ff) !important;
+}
+
+:root[data-theme="light"] .gen-markdown-body a {
+  color: #175dc9 !important;
+}
+
+:root[data-theme="light"] .gen-context-panel .gen-collapsible-panel {
+  border-color: rgba(23, 52, 86, 0.16) !important;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.96), rgba(246, 251, 255, 0.95)) !important;
+  box-shadow: 0 10px 24px rgba(45, 78, 125, 0.1);
+}
+
+:root[data-theme="light"] .gen-context-panel .gen-collapsible-header {
+  background: linear-gradient(180deg, #f8fbff 0%, #edf4ff 100%) !important;
+  border-color: rgba(23, 52, 86, 0.14) !important;
+}
+
+:root[data-theme="light"] .gen-context-panel .gen-collapsible-content {
+  background: rgba(255, 255, 255, 0.9) !important;
+  color: #3a5473 !important;
+}
+
+:root[data-theme="light"] .gen-context-panel .gen-context-divider svg {
+  color: #7991ae !important;
+}
+
+:root[data-theme="light"] .gen-context-panel input {
+  border-color: rgba(23, 52, 86, 0.16) !important;
+  background: rgba(255, 255, 255, 0.96) !important;
+  color: #0f233f !important;
+}
+
+:root[data-theme="light"] .gen-context-panel input::placeholder {
+  color: #6d82a0 !important;
+}

@@ -1,0 +1,24 @@
+{
+  "plugins": ["oxc"],
+  "rules": {
+    "oxc/no-throw": "error",
+    "oxc/no-try-catch": "error",
+    "oxc/no-promise-then": "error",
+    "oxc/no-effect-run-in-effect": "error",
+    "oxc/require-trace-mutation": "error",
+    "oxc/require-effect-service-accessors": "error",
+    "oxc/no-context-tag": "error",
+    "oxc/no-process-env": "error",
+    "oxc/no-console-log": "error",
+    "oxc/no-option-get-or-throw": "error",
+    "oxc/require-service-as-const": "error",
+    "oxc/require-effect-fn-traced": "warn",
+    "oxc/no-silent-error-swallow": "error",
+    "oxc/require-service-identifier": "error",
+    "oxc/require-schema-class": "warn",
+    "oxc/thin-endpoint-handler": "warn",
+    "oxc/require-finalizer-cleanup": "warn",
+    "oxc/no-db-in-endpoints": "error",
+    "oxc/prefer-catchTag": "warn"
+  }
+}

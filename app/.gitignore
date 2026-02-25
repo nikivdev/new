@@ -1,0 +1,20 @@
+node_modules
+bun.lock
+dist
+.DS_Store
+
+# env / runtime
+.env
+.env.local
+*.log
+
+# web build output
+web/.output
+web/.wrangler
+web/.tanstack
+web/.turbo
+
+# local db
+*.db
+*.sqlite
+*.sqlite3
