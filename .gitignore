@@ -14,6 +14,7 @@ package-lock.json
 yarn.lock
 .vercel
 *.db
+*.tsbuildinfo
 .repo_ignore
 i.*
 i-*
@@ -26,3 +27,7 @@ past/
 private
 .npm-cache
 .cargo_home
+.encore
+encore.gen
+
+rise/

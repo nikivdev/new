@@ -10,6 +10,7 @@
     "typescript": "~5.2.2"
   },
   "dependencies": {
-    "encore.dev": "~1.46.5"
+    "encore.dev": "^1.53.8",
+    "stripe": "^17.7.0"
   }
 }

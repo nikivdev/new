@@ -1,0 +1,18 @@
+{
+  "$schema": "https://encore.dev/schemas/infra.schema.json",
+  "sql_servers": [
+    {
+      "host": "<planetscale-host>:5432",
+      "tls_config": {
+        "disable_ca_validation": false
+      },
+      "databases": {
+        "billing": {
+          "name": "<planetscale-db>",
+          "username": "<planetscale-username>",
+          "password": { "$env": "DB_PASSWORD" }
+        }
+      }
+    }
+  ]
+}
